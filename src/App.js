@@ -1,30 +1,26 @@
-import './App.css';
-// import Navbar from './components/Navbar';
-import {Route, Routes} from "react-router-dom";
-import Home from './routes/Home';
-import About from './routes/About';
-import Service from './routes/Service';
-import Register from './routes/Register';
-import Cards from './routes/Cards';
-import Sidebar from './routes/Sidebar';
-import Video1 from './routes/Video1';
 
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './routes/home';
+import Contact1 from './routes/contacts';
+import Greet1 from './routes/greet';
+import Service from './routes/sanika';
 function App() {
   return (
-    <div className="App">
+   <Router>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/service' element={<Service/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/cards' element={<Cards/>}/>
-        <Route path='/sidebar' element={<Sidebar/>}/>
-        <Route path='/video1' element={<Video1/>}/>
-
-
+        <Route path='/' element={<Home/>}></Route>
+        <Route path = '/contact' element={<Contact1/>}> </Route>
+        <Route path = '/greet' element={<Greet1/>}> </Route>
+        <Route path = '/service' element={<Service/>}></Route>
       </Routes>
-      
-    </div>
+      </Router>
+  //  <Router>
+  //   <Routes>
+
+  //   <Route path='/' element={<prof/>}></Route>
+  //   </Routes>
+  //  </Router>
   );
 }
 

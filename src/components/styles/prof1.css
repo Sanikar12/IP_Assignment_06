@@ -1,0 +1,111 @@
+
+/* Style the entire profile container */
+body{
+   color: black;
+}
+
+i{
+    color :white;
+}
+.profile-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the center content */
+.center-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Style the header */
+header {
+    margin-top: 63px;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  margin-left: 0;
+}
+
+#name {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Style the Web Developer title */
+#webd {
+  font-style: italic;
+  color: black;
+}
+
+/* Style the video element */
+video {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Style the audio element */
+audio {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Style the about section */
+.about {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#para {
+  font-size: 1.2em;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* Style the skill sets section */
+.prof ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prof ul li {
+  margin: 5px 0;
+}
+
+/* Style the projects iframe */
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border: none;
+}
+
+/* Style the personal details section */
+#personal img {
+  border-radius: 50%;
+  max-width: 150px;
+  width: 150px; /* Ensure both width and height are the same for a circular image */
+  height: 150px;
+}
+
+
+#personal table {
+  margin: 20px auto;
+  color:black
+}
+
+#personal table tr td {
+  padding: 5px;
+  font-weight: bold;
+  color :black
+ 
+}
+

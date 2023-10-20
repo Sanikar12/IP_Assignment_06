@@ -1,0 +1,229 @@
+.NavbarItems{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25) ;
+    width: 100%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    z-index: 9999;
+  }
+  .navbar-logo{
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer ;
+  }
+  nav {
+    height: 5rem;
+    width: 100vw;
+    background-color: #609966;
+    display: grid;
+    place-items: start; /* Change this from 'center' to 'start' */
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-size: 0.9rem;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.8px;
+  }
+  
+  .nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  
+  
+  .nav__links {
+    display: flex;
+    gap: 1.4rem; /* Adjust the gap as needed */
+    /* align-items: center; */
+    color: beige;
+  }
+  
+  
+  
+  .account {
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black; /* Set the button color to black */
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transition: all 0.5s ease;
+    letter-spacing: 0.8px;
+    color: white; /* Set text color to white */
+  }
+  
+  .account:hover {
+    background-color: #fbd85d;
+    color: #40513b;
+    text-decoration: none;
+  }
+  
+  .my-profile {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .my-profile svg {
+    font-size: 1.5rem;
+    color: beige;
+  }
+  
+  .profile__dropdown {
+    position: absolute;
+    top: 4.0rem;
+    right: -1.5rem;
+    width: 190px; /* Adjust the width as needed */
+    padding: 12px; /* Adjust the padding as needed */
+    border-radius: 0; /* Remove border-radius to make it a square box */
+    background-color: #fff;
+    border-color: #000;
+    border-width: 0.2cm;
+  }
+  
+  .profile__dropdown::before {
+    content: '';
+    position: absolute;
+    top: -0.7rem;
+    right: 1.1rem;
+    width: 20.2px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  
+  
+  .nav__links a {
+    text-decoration: none;
+    text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 0.7em 1rem ;
+      white-space: nowrap;
+  }
+  /* Your existing CSS code up to .nav__links */
+  
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Add a class for the right side container */
+  
+  
+  /* Adjust CSS for the elements within .navbar-right */
+  .nav__toggle-btn {
+    display: none;
+  }
+  
+  .account {
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    transition: all 0.5s ease;
+    letter-spacing: 0.8px;
+    color: white
+  }
+  /* Modify the button text color when in the active state */
+  .nav__links a:hover,
+  .nav__links .account:hover {
+    background-color: #01959a;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  .NavbarItems ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  /* Your existing CSS code */
+  
+  .NavbarItems ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .Navright{
+    position: absolute;
+    left: 1350px;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .NavbarItems {
+      z-index: 99;
+    }
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: white;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      opacity: 0;
+      align-items: stretch;
+      padding: 80px 0 30px 0;
+      margin: 0;
+      border-radius: 13px;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      opacity: 1;
+      z-index: -1;
+    }
+  
+    .nav-links {
+      display: block;
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+    }
+   
+  
+    .nav-links:hover {
+      background: #01959a;
+      transition: none;
+    }
+  
+    button {
+      display: none;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: auto;
+      border-radius: 4px;
+      width: 80%;
+      background-color: #01959a;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  
+    .menu-icons {
+      display: block;
+      cursor:  black;
+    }
+  }
+  
